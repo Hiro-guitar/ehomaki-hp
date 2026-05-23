@@ -197,7 +197,7 @@ body {
 }
 
 .section-dark {
-  background: #505050;
+  background: var(--color-green);
   color: #fff;
 }
 
@@ -210,7 +210,7 @@ body {
 }
 
 .section-dark .feature-line {
-  background: var(--color-green);
+  background: #fff;
 }
 
 .section-dark .feature h3 {
@@ -398,19 +398,19 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: var(--color-line);
-  color: #fff;
+  background: #fff;
+  color: var(--color-primary);
   padding: 16px 44px;
   border-radius: 100px;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.02em;
-  transition: opacity var(--transition), transform var(--transition);
+  transition: background var(--transition), transform var(--transition);
 }
 
 .btn-line:hover {
-  opacity: 0.9;
+  background: #f0f0f0;
   transform: translateY(-1px);
 }
 
