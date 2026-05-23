@@ -197,7 +197,7 @@ body {
 }
 
 .section-dark {
-  background: var(--color-primary);
+  background: #505050;
   color: #fff;
 }
 
@@ -206,7 +206,7 @@ body {
 }
 
 .section-dark .section-intro {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .section-dark .feature-line {
@@ -218,7 +218,7 @@ body {
 }
 
 .section-dark .feature p {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .section-label {
