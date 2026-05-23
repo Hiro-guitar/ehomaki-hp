@@ -205,8 +205,12 @@ body {
   color: #fff;
 }
 
+.section-dark .section-label {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .section-dark .section-intro {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .section-dark .feature-line {
@@ -218,7 +222,7 @@ body {
 }
 
 .section-dark .feature p {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .section-label {
