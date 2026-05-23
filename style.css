@@ -5,11 +5,12 @@
 }
 
 :root {
-  --color-primary: #0a0a0a;
-  --color-accent: #2d2d2d;
+  --color-primary: #3C3C3C;
+  --color-green: #8BC53F;
+  --color-green-dark: #7ab535;
   --color-bg: #ffffff;
-  --color-bg-alt: #f5f5f3;
-  --color-text: #1a1a1a;
+  --color-bg-alt: #f6f7f5;
+  --color-text: #2c2c2c;
   --color-text-secondary: #6b6b6b;
   --color-border: #e5e5e5;
   --color-line: #06c755;
@@ -58,13 +59,19 @@ body {
 }
 
 .logo {
-  font-family: var(--font-en);
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
   text-decoration: none;
-  letter-spacing: 0.08em;
-  text-transform: lowercase;
+  color: var(--color-primary);
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.logo-icon {
+  width: 34px;
+  height: 34px;
 }
 
 .nav-list {
@@ -89,15 +96,15 @@ body {
 }
 
 .btn-nav {
-  background: var(--color-primary) !important;
+  background: var(--color-green) !important;
   color: #fff !important;
   padding: 10px 24px;
   border-radius: 100px;
-  transition: opacity var(--transition);
+  transition: background var(--transition);
 }
 
 .btn-nav:hover {
-  opacity: 0.8;
+  background: var(--color-green-dark) !important;
 }
 
 .nav-toggle {
@@ -131,7 +138,7 @@ body {
   font-weight: 500;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--color-text-secondary);
+  color: var(--color-green);
   margin-bottom: 24px;
 }
 
@@ -161,11 +168,11 @@ body {
   font-size: 0.88rem;
   font-weight: 600;
   letter-spacing: 0.04em;
-  transition: opacity var(--transition), transform var(--transition);
+  transition: background var(--transition), transform var(--transition);
 }
 
 .btn-primary:hover {
-  opacity: 0.8;
+  background: #2a2a2a;
   transform: translateY(-1px);
 }
 
@@ -184,12 +191,12 @@ body {
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-text-secondary);
+  color: var(--color-green);
   margin-bottom: 12px;
 }
 
 .section-label--light {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(139, 197, 63, 0.7);
 }
 
 .section h2 {
@@ -259,7 +266,7 @@ body {
 }
 
 .card:hover {
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 32px rgba(60, 60, 60, 0.08);
   transform: translateY(-2px);
 }
 
@@ -272,7 +279,7 @@ body {
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.1em;
-  color: var(--color-text-secondary);
+  color: var(--color-green);
   display: block;
   margin-bottom: 20px;
 }
@@ -318,9 +325,10 @@ body {
 
 .feature-line {
   width: 32px;
-  height: 2px;
-  background: var(--color-primary);
+  height: 3px;
+  background: var(--color-green);
   margin-bottom: 24px;
+  border-radius: 2px;
 }
 
 .feature h3 {
@@ -380,7 +388,7 @@ body {
 
 /* ── Footer ── */
 .footer {
-  background: #050505;
+  background: #2a2a2a;
   color: rgba(255, 255, 255, 0.35);
   padding: 32px 0;
   font-size: 0.78rem;
@@ -393,11 +401,18 @@ body {
 }
 
 .footer-logo {
-  font-family: var(--font-en);
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-weight: 600;
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.5);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
+}
+
+.footer-logo-icon {
+  width: 22px;
+  height: 22px;
 }
 
 /* ── Mobile ── */
