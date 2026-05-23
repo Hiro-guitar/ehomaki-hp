@@ -61,17 +61,12 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
   text-decoration: none;
-  color: var(--color-primary);
-  font-size: 1.15rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
 }
 
-.logo-icon {
-  width: 34px;
-  height: 34px;
+.logo-img {
+  height: 36px;
+  width: auto;
 }
 
 .nav-list {
